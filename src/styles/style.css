@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Yuji Syuku";
+  src: url("../fonts/YujiSyuku-Regular.ttf");
+}
+
+html {
+  background-color: #f2fdf8;
+}
+
+h1 {
+  height: 12vh;
+  color: black;
+  background-color: white;
+  font-family: "Yuji Syuku";
+  font-size: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid 4px black;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 5px #a19f9f;
+          box-shadow: 0px 2px 5px #a19f9f;
+}
+
+nav {
+  height: auto;
+  width: auto;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: double 3px black;
+}
+
+p {
+  font-family: "Noto Sans";
+  font-size: 1.05rem;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+li {
+  background-color: white;
+  border: solid 3px black;
+  padding: 10px 33px 10px 33px;
+  font-family: "Noto Sans", sans-serif;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+/*# sourceMappingURL=style.css.map */
