@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    initRender: './src/load.js'
+    initRender: './src/initRender.js'
 
   },
   plugins: [

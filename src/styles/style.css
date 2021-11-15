@@ -28,47 +28,64 @@
 }
 
 html {
-  background-color: #f2fdf8;
+  background-image: url("../images/sicilian-coast.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#content {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1 {
+  margin-top: 5vh;
   height: 12vh;
   color: black;
-  background-color: white;
   font-family: "Yuji Syuku";
   font-size: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1.5vh;
+  margin-bottom: 5vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: solid 4px black;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 2px 5px #a19f9f;
-          box-shadow: 0px 2px 5px #a19f9f;
+  z-index: 1;
 }
 
 nav {
   height: auto;
   width: auto;
-  margin-bottom: 3vh;
+  margin-bottom: 6.5vh;
   margin-top: 3vh;
+  z-index: 1;
 }
 
 img {
-  width: 100%;
+  position: relative;
+  max-width: 100%;
   height: auto;
-  border: double 3px black;
+  margin-top: -30vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
 }
 
 p {
   font-family: "Noto Sans";
-  font-size: 1.05rem;
+  font-size: 1.3rem;
+  line-height: 40px;
 }
 
 ul {
@@ -83,12 +100,30 @@ ul {
   font-size: 1.5rem;
 }
 
-li {
-  background-color: white;
-  border: solid 3px black;
-  padding: 10px 33px 10px 33px;
+.nav-item {
+  background-color: rgba(228, 248, 228, 0.733);
+  border-left: solid 3px rgba(66, 97, 52, 0.658);
+  border-right: solid 3px rgba(66, 97, 52, 0.658);
+  font-size: 1.8rem;
+  padding: 40px 5vw 40px 5vw;
   font-family: "Noto Sans", sans-serif;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 40%;
+}
+
+#tab-content {
+  background-color: rgba(255, 255, 255, 0.822);
+  height: 50vh;
+  max-width: 80vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 3vh 1vw 1vh 3vw;
+  border-left: solid 15px rgba(66, 97, 52, 0.658);
+  border-top-right-radius: 2%;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 2%;
 }
 /*# sourceMappingURL=style.css.map */

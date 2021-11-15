@@ -1,0 +1,65 @@
+{
+    "menuData": [
+        {
+            "category": "appetizer",
+            "name": "Arancini",
+            "price": "$6",
+            "description": "A delicious, breaded and deep-fried morsel of creamy risotto"
+        },
+        {
+            "category": "appetizer",
+            "name": "Tarongia",
+            "price": "$9",
+            "description": "This classic Sicilian flatbreaad is fried then grilled to create a beautifully crisp and indulgent starter. Topped with fennel, anchovies, chilli, pecorino, and onion."
+        },
+        {
+            "category": "appetizer",
+            "name": "Como Piccolo with Pesto alla Trapanese",
+            "price": "$8",
+            "description": "A small loaf of Italian-style bread with an almond and tomato-based alternative to traditional Ligurian pesto."
+        },
+        {
+            "category": "entree",
+            "name": "Coniglio alla Stimpirata",
+            "price": "$18",
+            "description": "Sweet and sour rabbit atop a bed of tender vegetables. Served at room temperature in warm weather."
+        },
+        {
+            "category": "entree",
+            "name": "Pasta con le Sarde",
+            "price": "$13",
+            "description": "A true taste of Siciily. Sardines are foundational to the cuisine of this Italian aisle. This classic dish consists of a simplistic combination of sardines, pine nuts, and raisins."
+        },
+        {
+            "category": "entree",
+            "name": "Pasta alla Norma",
+            "price": "$14",
+            "description": "Boccole noodles studded with golden aubergine. This dish uses a rich tomato sauce and is topped with shavings of ricotta salata."
+        },
+        {
+            "category": "beverages",
+            "name": "Nero D'Avola",
+            "price": "$7 glass, $25 bottle",
+            "description": "A popular red wine characteristic of Sicily. The grapes are though to have originated near Syracuse but are now grown throughout the region."
+        },
+        {
+            "category": "beverages",
+            "name": "Marsala",
+            "price": "$8 glass / $30 bottle",
+            "description": "The western town of Marsala is known for many things, but its eponymous dessert wine shines above the rest. A blend of white grape varietals make for a light, sweet, and satisfying experience."
+        },
+        {
+            "category": "beverages",
+            "name": "Espresso",
+            "price": "$2",
+            "description": "A shot of espresso to kickstart your post-dinner digestion and wake you up for the long night of mirth to come."
+        }   
+    ],
+    "contactData": {
+        "email": "GiuseppeSicilianEatery@gmail.com",
+        "phone": "(503) 255-5555",
+        "address": "1234 Parkland Avenue, Portland, OR 97218",
+        "social": "Follow us on social media for menu updates and showcases."
+    }
+}
+
