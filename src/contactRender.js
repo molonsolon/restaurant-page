@@ -5,7 +5,8 @@ const contactData = data.contactData;
 export default function contactRender() {
     const content = document.querySelector('#content')
     const tabContent = document.createElement('div');
-    tabContent.setAttribute('id', 'tab-content');
+    tabContent.setAttribute('id', 'contact-tab');
+    tabContent.classList.add('tab-content')
     const header = document.createElement('h2');
     header.textContent = 'Contact Us!'
     const infoList = document.createElement('ul');

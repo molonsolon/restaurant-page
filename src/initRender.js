@@ -2,6 +2,8 @@
 export default function initRender() {
     const content = document.querySelector('#content');
     const navbar = document.createElement('nav');
+    const titleContainer = document.createElement('header');
+    titleContainer.setAttribute('id', 'title-container')
     const title = document.createElement('h1');
 
     const navContent = document.createElement('ul');
@@ -30,7 +32,8 @@ export default function initRender() {
     
 
     
-    content.appendChild(title);
+    titleContainer.appendChild(title);
+    content.appendChild(titleContainer)
     content.appendChild(navbar);
     navbar.appendChild(navContent);
     navContent.appendChild(navHome);

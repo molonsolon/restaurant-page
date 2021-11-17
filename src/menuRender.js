@@ -5,10 +5,12 @@ const content = document.querySelector('#content')
 
 export default function menuRender() {
     const tabContent = document.createElement('div');
-    tabContent.setAttribute('id', 'tab-content');
+    tabContent.setAttribute('id', 'menu-tab');
+    tabContent.classList.add('tab-content')
     console.log(tabContent)
     
     const menuHeader = document.createElement('h2');
+    menuHeader.textContent = 'Menu';
     const menuAppetizersHeader = document.createElement('h3');
     menuAppetizersHeader.textContent = 'Appetizers'
     const menuEntreesHeader = document.createElement('h3');
@@ -22,7 +24,7 @@ export default function menuRender() {
     const menuBeverage = document.createElement('section');
     menuBeverage.classList.add('menu-lists');
 
-
+    
     // need to write a loop that reads all objects within menuData
     // it will first check the value of the category in an if .. else
     // in order to append the right items in the right places

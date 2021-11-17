@@ -4,6 +4,25 @@ $md: "799px";
 $lg: "1010px";
 $xl: "1280px";
 
+::-webkit-scrollbar {
+    width:10px;
+  }
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  opacity: 90%;
+  background: rgba(95, 85, 85, 0.767);
+  box-shadow: inset white 0px 2px 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(245, 228, 228, 0.534);
+    border-radius: 10px;
+
+  }
+#content::-webkit-scrollbar-track {
+    background: transparent;
+    box-shadow: none;
+}
+
 
 @font-face {
     font-family: "Noto Sans";
@@ -33,30 +52,60 @@ $xl: "1280px";
 html {
     background-image: url("../images/sicilian-coast.jpg");
     background-position: center;
-    background-size: cover;
-    height: 100vh; 
-    width: 100vw;
-    overflow: hidden; 
-    
+    // background-size: 300% 130%;
+    // aspect-ratio: 2 / 3;
+    height: auto;
+    padding-bottom: 10vh;
+    margin-top: 50vh;
+    width: 100%;
+    overflow-x: hidden;
+
 }
 
+img {
+}
 #content {
     display: grid;
     justify-content: center;
+    margin-top: -50vh;
+}
+
+#title-container {
+    display: flex;
+    margin-bottom: 3vh;
+    border: solid black 3px;
+    width: 570px;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 50%;
+    // background-image: radial-gradient( rgba(252, 230, 252, 0.575) 20%, rgba(248, 186, 186, 0.438) 40%, rgba(255, 255, 0, 0.151) 60%, rgba(24, 242, 242, 0.233) 80%);
+    background-color: rgba(255, 255, 255, 0.788);
+    box-shadow: rgba(138, 138, 138, 0.678) 1px 4px 3px;
+    margin-top: 5vh;
+    height: 120px;
+    padding: 90px 50px 110px 50px;
 }
 
 h1 {
-    margin-top: 5vh;
-    height: 12vh;
+
     color: black;
     font-family: "Yuji Syuku";
     font-size: 5rem;
-    display: flex;
-    margin-bottom: 5vh;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
 
+
+
+}
+
+h2 {
+    font-size: 3rem;
+    display: flex;
+    justify-self: center;
+}
+
+h3 {
+    font-size: 2.3rem;
 }
 
 nav {
@@ -65,6 +114,28 @@ nav {
     margin-bottom: 6.5vh;
     margin-top: 3vh;
     z-index: 1;
+}
+.nav-item {
+    background-color: rgba(228, 248, 228, 0.959);
+    opacity: 0.833;
+    border-left: solid 3px rgba(66, 97, 52, 0.658);
+    border-right: solid 3px rgba(66, 97, 52, 0.658);
+    box-shadow: rgba(138, 138, 138, 0.678) 1px 3px 2px;
+    font-size: 1.8rem;
+    padding: 40px 5vw 40px 5vw;
+    font-family: "Noto Sans", sans-serif;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 40%;
+    transition: opacity .55s, transform .75s;
+
+}
+
+.nav-item:hover {
+    opacity: 1;
+    transform: rotate(5deg) scale(1.05);
+
 }
 
 img {
@@ -99,7 +170,7 @@ img {
 p {
     font-family: "Noto Sans";
     font-size: 1.3rem;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 ul {
@@ -110,33 +181,38 @@ ul {
     font-size: 1.5rem;
 }
 
-.nav-item {
-    background-color: rgba(228, 248, 228, 0.733);
-    border-left: solid 3px rgba(66, 97, 52, 0.658);
-    border-right: solid 3px rgba(66, 97, 52, 0.658);
-    font-size: 1.8rem;
-    padding: 40px 5vw 40px 5vw;
-    font-family: "Noto Sans", sans-serif;
-    
-    border-top-right-radius: 40%;
-    border-top-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    border-bottom-left-radius: 40%;
-}
 
-#tab-content {
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     background-color: rgba(255, 255, 255, 0.822);
-    height: 50vh;
+    height: 60vh;
     max-width: 80vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin: auto;
     padding: 3vh 1vw 1vh 3vw;
     border-left: solid 15px rgba(66, 97, 52, 0.658);
     border-top-right-radius: 2%;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 2%;
-    
+    box-shadow: rgba(145, 145, 145, 0.678) 1px 3px 2px;
+    overflow-y: auto;
+
+
 }
 
+#contact-list {
+    display: flex;
+    flex-direction: column;
+}
 
+#home-tab {
+    display: flex;
+    align-items: center;
+}
+
+#menu-tab {
+    flex-direction: column;
+}
